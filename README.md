@@ -133,6 +133,52 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+---
+
+## Real-Time Facial Expression Recognition (Live Demo)
+
+In addition to offline training and evaluation, this project also includes a **real-time facial expression recognition system** using a webcam.
+
+The real-time application:
+- Loads the trained model (`emotion_model_v3.h5`)
+- Detects faces using Haar Cascade
+- Predicts emotions on live video frames
+- Displays emotion labels with confidence scores
+- Runs inside a simple UI with proper start, stop, and exit controls
+
+This demonstrates how the trained deep learning model can be **deployed in a real-world, interactive setting**.
+
+---
+
+## Real-Time Demo Screenshot
+
+Below is a snapshot of the live FER system running on a webcam feed:
+
+![Real-Time Facial Expression Recognition](assets/real_time_FER.png)
+
+---
+
+## Real-Time Features
+
+- Live face detection from webcam
+- Emotion prediction with confidence percentage
+- Prediction smoothing to reduce flickering
+- FPS display for performance monitoring
+- Clean UI with safe exit (camera releases correctly)
+
+---
+
+## How to Run Real-Time FER
+
+Make sure the trained model file is present: emotion_model_v3.h5
+
+
+Run the real-time application:
+
+```bash
+python real_time_FER.py.py
+
 
 
 
